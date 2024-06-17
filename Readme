@@ -1,0 +1,44 @@
+Spanish Electric System Data Extraction and Cleansing
+Autores:
+Iván Merino, Universidad Católica del Maule
+Marco Toranzo, Universidad Católica del Maule
+
+Descripción:
+Este script extrae datos del sistema eléctrico español, específicamente de la península, desde el sitio web REE. Los datos son registrados cada 5 minutos e incluyen diversas fuentes de generación de energía.
+
+Datos Incluidos:
+ts: Timestamp
+dem: Demanda
+eol: Eólica
+nuc: Nuclear
+gf: Gas/Fuel
+car: Carbón
+cc: Ciclo Combinado
+hid: Hidroeléctrica
+aut: Almacenamiento
+inter: Interconexiones
+icb: Almacenamiento
+sol: Solar
+solFot: Solar Fotovoltaica
+solTer: Solar Térmica
+termRenov: Energía Térmica Renovable (Biomasa)
+cogenResto: Cogeneración 
+
+Funcionalidades Principales:
+Extracción de Datos: Recopila datos desde el 1 de enero de 2016 hasta la fecha actual, almacenándolos en un archivo CSV.
+Limpieza de Datos: Remueve duplicados y promedia datos inconsistentes.
+Relleno de Vacíos: Completa datos faltantes mediante interpolación.
+Transformación de Unidades: Convierte los datos de MW a MWh si es necesario.
+
+Uso:
+El script puede ser configurado mediante variables de usuario para realizar diferentes tareas de limpieza y transformación de datos.
+
+Ejecución del Script:
+
+Desde el cmd: Python script.py
+Desde Jupyter Notebook o similares: Sólo copiar y pegar 
+
+Notas:
+Tener las librerías requests, json, csv, y pandas instaladas.
+El archivo CSV resultante se guarda en el escritorio del usuario (Windows).
+Configurar las opciones de usuario (mwh, data_cleansing, filling_gaps) según necesidades antes de ejecutar el script.
