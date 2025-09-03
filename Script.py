@@ -35,6 +35,7 @@ import os
 import requests
 import json
 import csv
+import pandas as pd
 from pathlib import Path
 from datetime import datetime, timedelta
 desktop_path = str(Path.home() / "Desktop")
@@ -110,7 +111,7 @@ if filling_gaps:
  
 if data_cleansing:
     # Intended to remove inconsistencies of the data
-    import pandas as pd
+
  
     with open(csv_filename, 'r', newline='') as csvfile:
         df = pd.read_csv(csvfile)
