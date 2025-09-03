@@ -5,7 +5,7 @@ Marco Toranzo, Universidad Católica del Maule
 
 Descripción:
 Este script extrae datos del sistema eléctrico español, específicamente de la península, desde el sitio web REE. Los datos son registrados cada 5 minutos e incluyen diversas fuentes de generación de energía.
-Probado desde 1/1/2016 al 31/12/2023.
+Probado desde 1/1/2016 al 31/07/2025.
 
 Datos Incluidos:
 ts: Timestamp
