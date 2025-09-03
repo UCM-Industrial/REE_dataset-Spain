@@ -31,6 +31,8 @@ Limpieza de Datos: Remueve duplicados y promedia datos inconsistentes.
 Relleno de Vacíos: Completa datos faltantes mediante interpolación.
 Transformación de Unidades: Convierte los datos de MW a MWh si es necesario.
 
+Existen dos versiones para el mismo propósito: Script y Script_multiproceso (más rápido)
+
 Uso:
 El script puede ser configurado mediante variables de usuario para realizar diferentes tareas de limpieza y transformación de datos.
 
@@ -38,6 +40,9 @@ Ejecución del Script:
 
 Desde el cmd: Python script.py
 Desde Jupyter Notebook o similares: Sólo copiar y pegar 
+
+Los datos se descargarán cada 5 min en MW o MWh según lo que se requiera.
+Si el usuario necesita los datos en otro periodo de tiempo, se debe usar el script adicional (group_by_time)
 
 Notas:
 Tener las librerías requests, json, csv, y pandas instaladas.
